@@ -1,5 +1,5 @@
 {
-    "WorkflowUrl":"https://raw.githubusercontent.com/microsoft/gatk4-data-processing-azure/main-azure/processing-for-variant-discovery-gatk4.wdl",
+    "WorkflowUrl":"https://raw.githubusercontent.com/BMurri/gatk4-data-processing-azure/bmtestacr/processing-for-variant-discovery-gatk4.wdl",
     "WorkflowInputsUrl":"https://raw.githubusercontent.com/microsoft/gatk4-data-processing-azure/main-azure/processing-for-variant-discovery-gatk4.hg38.wgs.inputs.json",
     "WorkflowOptionsUrl":null,
     "WorkflowDependenciesUrl":null

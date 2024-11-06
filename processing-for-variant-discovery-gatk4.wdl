@@ -57,17 +57,17 @@ workflow PreProcessingForVariantDiscovery_GATK4 {
   Int compression_level
   
   String? gatk_docker_override
-  String gatk_docker = select_first([gatk_docker_override, "broadinstitute/gatk:4.1.0.0"])
+  String gatk_docker = select_first([gatk_docker_override, "bmtestacr.azurecr.io/docker/broadinstitute/gatk:4.1.0.0"])
   String? gatk_path_override
   String gatk_path = select_first([gatk_path_override, "/gatk/gatk"])
 
   String? gotc_docker_override
-  String gotc_docker = select_first([gotc_docker_override, "broadinstitute/genomes-in-the-cloud:2.3.1-1512499786"])
+  String gotc_docker = select_first([gotc_docker_override, "bmtestacr.azurecr.io/docker/broadinstitute/genomes-in-the-cloud:2.3.1-1512499786"])
   String? gotc_path_override
   String gotc_path = select_first([gotc_path_override, "/usr/gitc/"])
 
   String? python_docker_override
-  String python_docker = select_first([python_docker_override, "python:2.7"])  
+  String python_docker = select_first([python_docker_override, "bmtestacr.azurecr.io/docker/library/python:2.7"])
 
   Int flowcell_small_disk
   Int flowcell_medium_disk
